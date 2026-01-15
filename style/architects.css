@@ -33,6 +33,10 @@
 
 
 }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /* header style  */
 .nav-item{
     list-style: none;
@@ -65,6 +69,34 @@
 .bannar-img{
     width: 100%;
 }
+/* team and feature related style  */
+.teams{
+    align-items: center;
+    margin-top: 130px;
+    gap: 100px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+
+}
+.our-features{
+    max-width: 537px;
+    /* border: 1px solid red; */
+
+}
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+#quick-list{
+    font-weight: 500;
+}
+
+/* responsive media query */
 @media screen and (max-width:576px) {
     .navbar, .navlinks{
         flex-direction: column;
