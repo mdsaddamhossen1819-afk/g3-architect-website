@@ -48,6 +48,9 @@ main{
 .text-gray{
     color: #424242;
 }
+.text-primary{
+    color: #ff900e;
+}
 .text-light-gray{
     color: #727272;
 }
@@ -84,10 +87,11 @@ main{
 }
 .our-features{
     max-width: 537px;
+  
     /* border: 1px solid red; */
 
 }
-.feature-title{
+.section-title{
     font-size: 2.8rem;
     font-weight: 700;
 
@@ -98,7 +102,18 @@ main{
 
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .navbar, .navlinks{
+     .navbar,
+     .navlinks, 
+     .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
         flex-direction: column;
     }
 }
