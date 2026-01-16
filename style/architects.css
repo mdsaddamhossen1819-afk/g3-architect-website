@@ -112,6 +112,16 @@ main{
    
 
 }
+#experience-badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+   
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
 .feature-card{
     padding: 30px;
     margin-bottom: 20px;
@@ -119,6 +129,13 @@ main{
     border-radius: 8px;
 
     
+}
+.featured-architect img{
+    width: 100%;
+}
+span{
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 .features{
     display: flex;
@@ -174,7 +191,8 @@ main{
 /* responsive media query */
 @media screen and (max-width:576px) {
      .navbar,
-     .navlinks, 
+     .navlinks,
+     .features, 
      .teams{
         flex-direction: column;
     }
@@ -189,6 +207,10 @@ main{
         justify-items: center;
       
     }
+    #experince-badge{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     .sponsor-companies{
       justify-items: center;
       gap: 30px;
@@ -198,7 +220,7 @@ main{
 }
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams, .features {
         flex-direction: column;
     }
      .facts-container,
@@ -207,5 +229,9 @@ main{
         gap: 50px;
         justify-items: center;
        
-     }    
+     }
+      #experince-badge{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }    
 }
